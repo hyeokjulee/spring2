@@ -13,6 +13,7 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 public class AppConfig {
+
     @Bean
     public MemberService memberService() {
         //1번
@@ -39,4 +40,5 @@ public class AppConfig {
  //       return new FixDiscountPolicy();
         return new RateDiscountPolicy();
     }
+
 }
